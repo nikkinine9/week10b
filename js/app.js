@@ -1,13 +1,32 @@
-Cookies.set("list", "userSelect");
-Cookies.set("list", "userSelect");
+Cookies.set("color");
 
-object.style.userSelect;
-object.style.userSelect = "auto";
+var color = document.getElementById("color");
+var result = "<h2>Your Languages</h2>";
+result += "<ul> n";
 
-var list = { 'Pikachu', 'Ralts', 'Eevee' }
-    [indx, tf] = listdlg('listString', list);
+for (i = 0; i < color.length; i++) {
+    currentOption = color[i];
+}
 
-function myFunction() {
-    var x = document.getElementsByTagName("div")[0];
-    document.getElementById("demo").style.userSelect;
+if (currentOption.selected == true) {
+    result += " <li>" + currentOption.value + "</li> n";
+    result += "</ul> n";
+    output = document.getElementById("output");
+    output.innerHTML = result;
+}
+
+function showChoices() {
+    var color = document.getElementById("color");
+    var result = "<h2>Your Languages</h2>";
+    result += "<ul> n";
+    for (i = 0; i < color.length; i++) {
+        currentOption = color[i];
+        if (currentOption.selected == true) {
+            result += " <li>" + currentOption.value + "</li> n";
+        }
+    }
+
+    result += "</ul> n";
+    output = document.getElementById("output");
+    output.innerHTML = result;
 }

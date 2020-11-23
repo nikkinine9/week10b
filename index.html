@@ -4,18 +4,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Page 1</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.9.1/css/bulma.min.css">
 </head>
 
 <body>
-    <div><button onclick="myFunction()">Pikachu</button></div>
-    <div><button onclick="myFunction()">Ralts</button></div>
-    <div><button onclick="myFunction()">Eevee</button></div>
-    <p id="demo" style="user-select:auto"></p>
+    <h1>Multiple Selections</h1>
+    <form action=>
+        <fieldset>
+            <label>Select the color code you want</label>
+            <select id="color" multiple="multiple" size="3">
+                <option value = "Red">RED</option>
+                <option value = "Blue">BLUE</option>
+                <option value = "Yellow">YELLOW</option>
+            </select>
+            <button type="button " onclick="showChoices() ">Submit</button>
+        </fieldset>
+    </form>
+    <div id="output">
+    </div>
     <a href="page2.html">Go to Page 2</a>
     <script src="https://cdn.jsdelivr.net/npm/js-cookie@2/src/js.cookie.min.js"></script>
-    <script src="js/app.js"></script>
+    <script src="js/app.js "></script>
 </body>
 
 </html>

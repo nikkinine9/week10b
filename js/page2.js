@@ -1,5 +1,5 @@
-var list = Cookies.get("userSelect");
-console.log(userSelect);
+var color = Cookies.get("color");
+console.log(color);
 
-Cookies.remove("userSelect");
-console.log(Cookies.get("userSelect"));
+Cookies.remove("color");
+console.log(Cookies.get("color"));
